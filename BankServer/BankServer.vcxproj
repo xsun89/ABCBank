@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FCFB4E11-ABD2-48A2-89E5-2343A04AA0D2}</ProjectGuid>
+    <RootNamespace>BankServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Public\Date.cpp" />
+    <ClCompile Include="..\Public\Exception.cpp" />
+    <ClCompile Include="..\Public\Idea.cpp" />
+    <ClCompile Include="..\Public\JInStream.cpp" />
+    <ClCompile Include="..\Public\JOutStream.cpp" />
+    <ClCompile Include="..\Public\JThread.cpp" />
+    <ClCompile Include="..\Public\JUtil.cpp" />
+    <ClCompile Include="..\Public\Logging.cpp" />
+    <ClCompile Include="..\Public\LogStream.cpp" />
+    <ClCompile Include="..\Public\MD5.cpp" />
+    <ClCompile Include="..\Public\Socket.cpp" />
+    <ClCompile Include="..\Public\StringUtil.cpp" />
+    <ClCompile Include="..\Public\Systemconfig.cpp" />
+    <ClCompile Include="..\Public\Timestamp.cpp" />
+    <ClCompile Include="BankSession.cpp" />
+    <ClCompile Include="BankThread.cpp" />
+    <ClCompile Include="CMD\BalanceInquiry.cpp" />
+    <ClCompile Include="CMD\ChangePassword.cpp" />
+    <ClCompile Include="CMD\CloseAccount.cpp" />
+    <ClCompile Include="CMD\Deposit.cpp" />
+    <ClCompile Include="CMD\OpenAccount.cpp" />
+    <ClCompile Include="CMD\QueryAccountHistoryBill.cpp" />
+    <ClCompile Include="CMD\QueryDayBill.cpp" />
+    <ClCompile Include="CMD\QueryHistoryBill.cpp" />
+    <ClCompile Include="CMD\Transfer.cpp" />
+    <ClCompile Include="CMD\UserLogin.cpp" />
+    <ClCompile Include="CMD\Withdrawal.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="TransactionManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Public\Date.h" />
+    <ClInclude Include="..\Public\Exception.h" />
+    <ClInclude Include="..\Public\Idea.h" />
+    <ClInclude Include="..\Public\JInStream.h" />
+    <ClInclude Include="..\Public\JOutStream.h" />
+    <ClInclude Include="..\Public\JThread.h" />
+    <ClInclude Include="..\Public\JUtil.h" />
+    <ClInclude Include="..\Public\Logging.h" />
+    <ClInclude Include="..\Public\LogStream.h" />
+    <ClInclude Include="..\Public\MD5.h" />
+    <ClInclude Include="..\Public\Singleton.h" />
+    <ClInclude Include="..\Public\Socket.h" />
+    <ClInclude Include="..\Public\StringUtil.h" />
+    <ClInclude Include="..\Public\SystemConfig.h" />
+    <ClInclude Include="..\Public\Timestamp.h" />
+    <ClInclude Include="BankSession.h" />
+    <ClInclude Include="BankThread.h" />
+    <ClInclude Include="CMD\BalanceInquiry.h" />
+    <ClInclude Include="CMD\ChangePassword.h" />
+    <ClInclude Include="CMD\CloseAccount.h" />
+    <ClInclude Include="CMD\Deposit.h" />
+    <ClInclude Include="CMD\OpenAccount.h" />
+    <ClInclude Include="CMD\QueryAccountHistoryBill.h" />
+    <ClInclude Include="CMD\QueryDayBill.h" />
+    <ClInclude Include="CMD\QueryHistoryBill.h" />
+    <ClInclude Include="CMD\Transaction.h" />
+    <ClInclude Include="CMD\Transfer.h" />
+    <ClInclude Include="CMD\UserLogin.h" />
+    <ClInclude Include="CMD\Withdrawal.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="TransactionManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CMD">
+      <UniqueIdentifier>{c5f0f010-6d19-4067-9648-a277ad574fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{103ce4f5-cf13-47b7-9f64-c6c078940f84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMD\BalanceInquiry.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\ChangePassword.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\CloseAccount.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\Deposit.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\OpenAccount.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\QueryAccountHistoryBill.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\QueryDayBill.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\QueryHistoryBill.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\Transfer.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\UserLogin.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\Withdrawal.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Date.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Exception.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Idea.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JInStream.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JOutStream.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JThread.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JUtil.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Logging.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\LogStream.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\MD5.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Socket.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\StringUtil.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Systemconfig.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Timestamp.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="BankSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BankThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMD\BalanceInquiry.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\ChangePassword.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\CloseAccount.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Deposit.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\OpenAccount.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\QueryAccountHistoryBill.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\QueryDayBill.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\QueryHistoryBill.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Transaction.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Transfer.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\UserLogin.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Withdrawal.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Date.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Exception.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Idea.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JInStream.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JOutStream.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JThread.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JUtil.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Logging.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LogStream.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MD5.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Singleton.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Socket.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\StringUtil.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SystemConfig.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Timestamp.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="BankSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BankThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransactionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
