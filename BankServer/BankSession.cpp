@@ -22,8 +22,6 @@ void BankSession::Process()
 
 void BankSession::Send(const char* buf, size_t len)
 {
-	std::cout << buf << std::endl;
-	std::cout << len << std::endl;
 	socket_->SendN(buf, len);
 }
 
