@@ -18,7 +18,7 @@ void UserLogin::Execute(BankSession& session)
 
 	int16 error_code = 0;
 	char error_msg[31] = {0};
-	if(name != "admin" && pass != "123456")
+	if(name != "admin" || pass != "123456")
 	{
 		error_code = 1;
 		strcpy_s(error_msg, "User name or Password wrong");
