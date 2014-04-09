@@ -91,6 +91,7 @@
     <ClCompile Include="CMD\Transfer.cpp" />
     <ClCompile Include="CMD\UserLogin.cpp" />
     <ClCompile Include="CMD\Withdrawal.cpp" />
+    <ClCompile Include="DAL\BankService.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="TransactionManager.cpp" />
@@ -125,8 +126,15 @@
     <ClInclude Include="CMD\Transfer.h" />
     <ClInclude Include="CMD\UserLogin.h" />
     <ClInclude Include="CMD\Withdrawal.h" />
+    <ClInclude Include="DAL\Account.h" />
+    <ClInclude Include="DAL\BankService.h" />
+    <ClInclude Include="DAL\IBankService.h" />
+    <ClInclude Include="DAL\TransDetail.h" />
     <ClInclude Include="Server.h" />
     <ClInclude Include="TransactionManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="server.conf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

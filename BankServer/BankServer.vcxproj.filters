@@ -19,6 +19,12 @@
     <Filter Include="Public">
       <UniqueIdentifier>{103ce4f5-cf13-47b7-9f64-c6c078940f84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DAL">
+      <UniqueIdentifier>{619e3a80-1ab4-43e3-8262-3f8460e54b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{8913e523-0fe4-4edb-b1d4-0ca3ed50ab0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CMD\BalanceInquiry.cpp">
@@ -110,6 +116,9 @@
     </ClCompile>
     <ClCompile Include="TransactionManager.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DAL\BankService.cpp">
+      <Filter>DAL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -206,5 +215,22 @@
     <ClInclude Include="TransactionManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DAL\Account.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\BankService.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\IBankService.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\TransDetail.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="server.conf">
+      <Filter>Config</Filter>
+    </None>
   </ItemGroup>
 </Project>
