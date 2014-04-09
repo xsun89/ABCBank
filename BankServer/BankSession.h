@@ -2,6 +2,9 @@
 #define _BANK_SESSION_H_
 #include "../Public/JUtil.h"
 #include "../Public/Socket.h"
+#include "../Public/MD5.h"
+#include "../Public/Idea.h"
+
 #include <memory>
 using namespace PUBLIC;
 
