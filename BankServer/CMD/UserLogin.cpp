@@ -6,10 +6,11 @@
 #include "../../Public/JOutStream.h"
 #include "../../Public/MD5.h"
 #include "../../Public/Idea.h"
+#include "../DAL/BankService.h"
 
 using namespace PUBLIC;
 using namespace CMD;
-
+using namespace DAL;
 void UserLogin::Execute(BankSession& session)
 {
 	JInStream jis(session.GetRequestPack()->buf, session.GetRequestPack()->head.len);
@@ -41,7 +42,15 @@ void UserLogin::Execute(BankSession& session)
 
 	int16 error_code = 0;
 	char error_msg[31] = {0};
-	if (name != "admin" || strcmp(pass, "123456") != 0)
+	
+	BankService dao;
+	int ret;
+	ret = dao.UserLogin(name, pass);
+	if(ret == 0)
+	{
+		LOG_INFO<<"登录成功";
+	}
+	else if (ret == 1)
 	{
 		error_code = 1;
 		strcpy_s(error_msg, "用户名或密码错误");

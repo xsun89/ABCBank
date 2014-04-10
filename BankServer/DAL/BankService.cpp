@@ -4,6 +4,7 @@
 #include "../../Public/Logging.h"
 #include "../../Public/Exception.h"
 #include "../../Public/JUtil.h"
+#include "../DAL/MysqlDB.h"
 
 #include <sstream>
 using namespace std;
@@ -13,9 +14,26 @@ using namespace PUBLIC;
 
 int BankService::UserLogin(const string& user, const string& pass)
 {
-	if (user != "admin" || pass != "123456")
-		return 1;
+	try{
+		MysqlDB db;
+		Server& server = Singleton<Server>::Instance();
+		db.Open(server.GetDbServerIp().c_str(), server.GetDbUser().c_str(), 
+			server.GetDbPass().c_str(), server.GetDbName().c_str(), server.GetDbServerPort());
 
+		stringstream query;
+		query << "select * from teller where TELLER_NAME = '"
+			<< user << "' and TELLER_PASS = '" <<pass << "';";
+
+		MysqlRecordset recoredSet  = db.QuerySQL(query.str().c_str());
+
+		if (recoredSet.GetRows() < 0)
+			return 1;
+
+
+	}catch(Exception& e)
+	{
+		LOG_INFO<<e.what();
+	}
 	return 0;
 }
 

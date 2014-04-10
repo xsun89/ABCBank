@@ -120,6 +120,9 @@
     <ClCompile Include="DAL\BankService.cpp">
       <Filter>DAL</Filter>
     </ClCompile>
+    <ClCompile Include="DAL\MysqlDB.cpp">
+      <Filter>DAL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMD\BalanceInquiry.h">
@@ -225,6 +228,9 @@
       <Filter>DAL</Filter>
     </ClInclude>
     <ClInclude Include="DAL\TransDetail.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\MysqlDB.h">
       <Filter>DAL</Filter>
     </ClInclude>
   </ItemGroup>
