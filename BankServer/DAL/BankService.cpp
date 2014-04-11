@@ -54,7 +54,7 @@ int BankService::OpenAccount(Account& account)
 
 		db.StartTransaction();
 		stringstream ss;
-		ss << "insert into bank_account valuses(null, '" <<
+		ss << "insert into bank_account values(null, '" <<
 			account.name <<"', '"<<
 			account.pass<<"', '"<<
 			account.id<<"', "<<
@@ -62,6 +62,7 @@ int BankService::OpenAccount(Account& account)
 			0<<");";
 		unsigned long long ret = db.ExecSQL(ss.str().c_str());
 		ss.clear();
+		ss.str("");
 		account.account_id = static_cast<int>(db.GetInsertId());
 		ss<<"insert into trans values(null, "<<
 			account.account_id<<", null, "<<

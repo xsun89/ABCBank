@@ -25,6 +25,9 @@
     <Filter Include="Config">
       <UniqueIdentifier>{8913e523-0fe4-4edb-b1d4-0ca3ed50ab0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{4ee955cb-e3b5-458e-98ea-98b99902ccb8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CMD\BalanceInquiry.cpp">
@@ -237,6 +240,9 @@
   <ItemGroup>
     <None Include="server.conf">
       <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Documents\baiduYuen\BaiduYun\C++教程网培训视频\5.3跟我一起学C++（软件设计与工程实践篇）\跟我一起学C++第三季35-39\ppt36\crebas.sql">
+      <Filter>Lib</Filter>
     </None>
   </ItemGroup>
 </Project>
