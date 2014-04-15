@@ -86,7 +86,7 @@ void OpenAccount::Execute(BankSession& session)
 
 	size_t tailPos = jos.Length();
 	jos.Reposition(lengthPos);
-	jos<<static_cast<uint16>(tailPos + 8 - sizeof(ResponsePack));
+	jos<<static_cast<uint16>(tailPos + 8 - sizeof(ResponseHead));
 	jos.Reposition(tailPos);
 
 	unsigned char hash[16];
